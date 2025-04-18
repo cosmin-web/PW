@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persoane>
+    <persoana id="1">
+        <nume>Popescu</nume>
+        <prenume>Ion</prenume>
+        <varsta>23</varsta>
+        <adresa>
+            <strada>Strada Principala</strada>
+            <numar>1</numar>
+            <localitate>Belcesti</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <telefon>0712345678</telefon>
+        <email>ion.popescu@example.com</email>
+        <ocupatie>Programator</ocupatie>
+        <studii>
+            <nivel>Licenta</nivel>
+            <universitate>Universitatea Tehnica Iasi</universitate>
+            <specializare>Informatica</specializare>
+        </studii>
+        <limbi>
+            <limb>Romana</limb>
+            <limb>Engleza</limb>
+        </limbi>
+    </persoana>
+
+    <persoana id="2">
+        <nume>Oancea</nume>
+        <prenume>Cosmin</prenume>
+        <varsta>21</varsta>
+        <adresa>
+            <strada>Strada Verde</strada>
+            <numar>22</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <telefon>0747577132</telefon>
+        <email>cosmin.oancea@gmail.com</email>
+        <ocupatie>Student</ocupatie>
+        <studii>
+            <nivel>Licenta</nivel>
+            <universitate>Universitate Gheorghe Asachi</universitate>
+            <specializare>Calculatoare si Tehnologia Informatiei</specializare>
+        </studii>
+        <limbi>
+            <limb>Romana</limb>
+            <limb>Engleza</limb>
+            <limb>Franceza</limb>
+        </limbi>
+    </persoana>
+
+    <persoana id="3">
+        <nume>Chiriac</nume>
+        <prenume>Gabriel</prenume>
+        <varsta>25</varsta>
+        <adresa>
+            <strada>Strada Mare</strada>
+            <numar>10</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <telefon>0734567890</telefon>
+        <email>chiriac.gabriel@gmail.com</email>
+        <ocupatie>Inginer</ocupatie>
+        <studii>
+            <nivel>Master</nivel>
+            <universitate>Universitatea Ovidius</universitate>
+            <specializare>Inginerie Electronica</specializare>
+        </studii>
+        <limbi>
+            <limb>Romana</limb>
+            <limb>Engleza</limb>
+        </limbi>
+    </persoana>
+
+    <persoana id="4">
+        <nume>Radu</nume>
+        <prenume>Elena</prenume>
+        <varsta>28</varsta>
+        <adresa>
+            <strada>Strada Libertatii</strada>
+            <numar>15</numar>
+            <localitate>Cluj-Napoca</localitate>
+            <judet>Cluj</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <telefon>0765432109</telefon>
+        <email>elena.radu@example.com</email>
+        <ocupatie>Medic</ocupatie>
+        <studii>
+            <nivel>Doctorat</nivel>
+            <universitate>Universitatea de Medicina Cluj</universitate>
+            <specializare>Medicina Generala</specializare>
+        </studii>
+        <limbi>
+            <limb>Romana</limb>
+            <limb>Engleza</limb>
+            <limb>Germana</limb>
+        </limbi>
+    </persoana>
+</persoane>

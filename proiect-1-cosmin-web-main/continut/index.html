@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restaurant Delicios</title>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" >
+        <script>
+function schimbaContinut(resursa, jsFisier, jsFunctie) {
+        let xhr = new XMLHttpRequest();
+        xhr.onload = function () {
+            document.getElementById("continut").innerHTML = this.responseText;
+
+            if (jsFisier) 
+            {
+                var elementScript = document.createElement('script');
+                elementScript.onload = function () 
+                {
+                    console.log("Scriptul " + jsFisier + " a fost încărcat.");
+                    if (jsFunctie) 
+                    {
+                        window[jsFunctie]();
+                    }
+                };
+                elementScript.src = "js/" + jsFisier;
+                document.head.appendChild(elementScript);
+            } 
+            else 
+            {
+                if (jsFunctie) 
+                {
+                    window[jsFunctie]();
+                }
+            }
+        };
+        xhr.open("GET", resursa + ".html"); 
+        xhr.send();
+    }
+        </script>
+    </head>       
+    <body onload="schimbaContinut('acasa');">
+        <header>
+            <h1>Restaurant Delicios</h1>
+            <nav>
+                <a onclick="schimbaContinut('acasa');">Acasă</a>
+                <a onclick="schimbaContinut('desen');">Desen</a>
+                <a onclick="schimbaContinut('despre');">Despre</a>
+                <a onclick="schimbaContinut('inregistreaza');">Înregistrează</a>
+                <a onclick="schimbaContinut('invat', 'script.js', 'invat');">Învăț</a>
+                <a onclick="schimbaContinut('video');">Video</a>
+                <a onclick="schimbaContinut('persoane', 'persoane.js', 'incarcaPersoane');">Persoane</a>
+                <a onclick="schimbaContinut('verifica');">Verifică</a>
+                <a onclick="schimbaContinut('cumparaturi', 'cumparaturi.js');">Cumpărături</a>              
+            </nav>
+        </header>
+        
+        <main id="continut">
+
+        </main>
+
+        <footer>
+            <div>&copy; 2025 Restaurant Delicios. Toate drepturile rezervate.</div>
+        </footer>
+        </main>
+        <script src="js/script.js"></script>
+    </body>
+</html>

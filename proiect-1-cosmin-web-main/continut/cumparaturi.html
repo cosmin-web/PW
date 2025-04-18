@@ -1,0 +1,38 @@
+<form onsubmit="event.preventDefault(); adaugaProdus();">
+    <fieldset>
+        <legend>Adaugă comandă</legend>
+
+        <label for="nume">Fel de mâncare:</label>
+        <select id="nume">
+            <option value="Pizza">Pizza</option>
+            <option value="Paste">Paste</option>
+            <option value="Sarmale">Sarmale</option>
+            <option value="Ciorbă">Ciorbă</option>
+            <option value="Burger">Burger</option>
+            <option value="Salată">Salată</option>
+        </select><br><br>
+
+        <label for="cantitate">Cantitate:</label>
+        <select id="cantitate">
+            <option value="1 porție">1 porție</option>
+            <option value="2 porții">2 porții</option>
+            <option value="500g">500g</option>
+            <option value="1kg">1kg</option>
+            <option value="3 bucăți">3 bucăți</option>
+        </select><br><br>
+
+        <label for="storage">Alegeți modalitatea de salvare:</label>
+        <select id="storage" onchange="actualizeazaLista()">
+            <option value="localStorage">localStorage</option>
+            <option value="indexedDB">IndexedDB</option>
+        </select><br><br>
+
+        <button type="submit">Adaugă</button>
+    </fieldset>
+
+    <h3>Comanda ta:</h3>
+    <ul id="lista"></ul>
+
+    <button type="button" onclick="golesteLista()">Golește lista</button>
+</form>
+

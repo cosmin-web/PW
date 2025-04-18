@@ -1,0 +1,25 @@
+<!ELEMENT persoane (persoana+)>
+<!ELEMENT persoana (nume, prenume, varsta, adresa, telefon, email, ocupatie, studii, limbi)>
+<!ATTLIST persoana id ID #REQUIRED>
+    
+<!ELEMENT nume (#PCDATA)>
+<!ELEMENT prenume (#PCDATA)>
+<!ELEMENT varsta (#PCDATA)>
+<!ELEMENT telefon (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT ocupatie (#PCDATA)>
+    
+<!ELEMENT adresa (strada, numar, localitate, judet, tara)>
+<!ELEMENT strada (#PCDATA)>
+<!ELEMENT numar (#PCDATA)>
+<!ELEMENT localitate (#PCDATA)>
+<!ELEMENT judet (#PCDATA)>
+<!ELEMENT tara (#PCDATA)>
+    
+<!ELEMENT studii (nivel, universitate, specializare)>
+<!ELEMENT nivel (#PCDATA)>
+<!ELEMENT universitate (#PCDATA)>
+<!ELEMENT specializare (#PCDATA)>
+    
+<!ELEMENT limbi (limb+)>
+<!ELEMENT limb (#PCDATA)>

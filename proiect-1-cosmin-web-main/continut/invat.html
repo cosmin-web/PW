@@ -1,0 +1,41 @@
+            <section id="info-browser">
+                <h2>Informații despre browser</h2>
+                <p id="info"></p>
+            </section>
+
+            <section id="desen-canvas">
+                <h2>Desenare pe Canvas</h2>
+                <label for="culoare-contur">Culoare contur:</label>
+                <input type="color" id="culoare-contur" value="#000000">
+                
+                <label for="culoare-umplere">Culoare umplere:</label>
+                <input type="color" id="culoare-umplere" value="#ff0000">
+
+                <canvas id="canvas" width="500" height="400"></canvas>
+            </section>
+
+            <section id="modificare-tabel">
+                <h2>Modificare dinamică a tabelului</h2>
+                <label for="linie-coloana">Poziție (linie/coloană):</label>
+                <input type="number" id="linie-coloana" placeholder="Numărul liniei sau coloanei">
+                
+                <label for="culoare">Culoare fundal:</label>
+                <input type="color" id="culoare" value="#ffcc00">
+
+                <button onclick="insereazaLinie()">Inserează linie</button>
+                <button onclick="insereazaColoana()">Inserează coloană</button>
+
+                <table id="tabel" border="1">
+                    <thead>
+                        <tr>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        </tr>
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
